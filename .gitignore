@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.qoder/rules/code-auto-collection.md
+
+/app/generated/prisma
