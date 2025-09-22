@@ -52,3 +52,24 @@ neon
 https://console.neon.tech/
 
 https://neon.com/
+
+
+POSTGRES_URL_NONPOOLING 变量的获取
+
+案例 A：如果你使用的是 Neon (最常见的情况)
+一个 Neon 的带连接池的 URL 看起来会像这样：
+postgres://user:password@ep-ancient-sound-a1b2c3d4-pooler.us-east-2.aws.neon.tech/dbname
+请注意中间那个 -pooler 的部分。
+✅ 你的操作：
+非常简单，只需要把主机名里的 -pooler 删除掉，就得到了直连 URL！
+原来的 (带连接池):
+...-a1b2c3d4-pooler.us-east-2.aws.neon.tech/...
+修改后的 (直连):
+...-a1b2c3d4.us-east-2.aws.neon.tech/...
+
+
+所以，你需要：
+复制 POSTGRES_URL 的完整值。
+粘贴到一个文本编辑器里。
+找到并删除 -pooler 这个部分。
+这个新的 URL 就是你的 POSTGRES_URL_NONPOOLING 的值。
