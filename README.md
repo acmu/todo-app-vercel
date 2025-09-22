@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## 要解决的问题
+
+1. 使用 npmrc 配置仓库源，不要使用内部源
+2. Prisma 自动生成目录，必须要在 eslint 省略，否则部署失败
+
+连接数据库使用 postgresql  使用 neon 数据库
+
+PostgreSQL: The world's most advanced open source database
+
+https://console.neon.tech/app/projects/weathered-queen-39324162
+
+neon
+
+https://console.neon.tech/
+
+https://neon.com/
